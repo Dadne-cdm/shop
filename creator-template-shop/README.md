@@ -1,227 +1,175 @@
-# 🎨 creator-template-shop SKILL
-## Construye temas Shopify premium con 19 agentes especializados
+# 🎨 creator-template-shop
+
+> **Skill para Claude Desktop** que construye temas Shopify premium completos con 19 agentes especializados
 
 ---
 
-## ✨ ¿QUÉ ES?
+## ✨ ¿QUÉ HACE?
 
-Un **skill para Claude** que automatiza la construcción de temas Shopify profesionales, listo para producción. 
+En lugar de escribir cientos de archivos Liquid a mano, este skill automatiza todo el proceso:
 
-**En lugar de:**
-- ⏳ Pasar semanas escribiendo código Liquid
-- 🤔 Preocuparte por errores y validación
-- 📊 Implementar analytics y testing manually
-- 🔄 Integrar múltiples canales
-
-**Con este skill:**
-- ✅ Construye temas completos en horas
-- ✅ 19 agentes validan cada paso
-- ✅ Popups, analytics, automations incluidos
-- ✅ Multi-channel ready (email, SMS, agentic)
-
----
-
-## 🚀 CARACTERÍSTICAS PRINCIPALES
-
-### ✅ 51 ARCHIVOS LIQUID + 5 JSON
-- Home (11 secciones)
-- Producto **🏆** (16 secciones con tendencias 2026)
-- Colecciones (5 secciones)
-- Carrito (4 secciones)
-- Snippets reutilizables (6)
-
-### ✅ POPUP SYSTEM AVANZADO 🎯
-- Welcome popups
-- Exit-intent detection
-- Event-triggered (scroll, time, add to cart)
-- Email + Teléfono + WhatsApp
-- Imágenes + Videos
-- 100% mobile-optimized
-
-### ✅ CONVERSIÓN & OPTIMIZACIÓN
-- A/B testing + GA4 analytics
-- SEO (meta tags, schema markup)
-- Performance (Lighthouse >75)
-- CRO (friction analysis)
-
-### ✅ INTEGRACIONES
-- Shopify AI Toolkit (GraphQL validation)
-- Multi-channel (email, SMS, agentic storefronts)
-- Shopify Flow automations
-- Customer journey orchestration
-
----
-
-## 📊 19 AGENTES ESPECIALIZADOS
-
-| FASE | AGENTES | FUNCIÓN |
-|------|---------|---------|
-| **CONSTRUCCIÓN** | 1-7 | Generar estructura HTML/Liquid |
-| **CALIDAD** | 8-11 | Validar código + composición |
-| **CONVERSIÓN** | 12-17 | Popups, A/B testing, SEO, CRO |
-| **EXPANSIÓN** | 18-19 | Multi-channel + automations |
-
-**Ver:** [AGENTS-SUMMARY.md](./AGENTS-SUMMARY.md) para detalles completos
-
----
-
-## 🎯 CÓMO USAR
-
-### Opción 1: Claude Desktop (Mac)
-```bash
-# 1. Copia el archivo al directorio correcto
-cp ~/Downloads/SKILL.md \
-  ~/Library/Application\ Support/Claude/skills/creator-template-shop/SKILL.md
-
-# 2. Reinicia Claude Desktop
-# 3. Activa el skill en el menú
-
-# 4. Pide un tema:
-"Construye un tema Shopify para suplementos deportivos
-- Colores: azul + gris
-- Tendencias 2026: nutritional info, stock badges, sticky ATC
-- Multi-mercado: ES, EN, FR"
-```
-
-### Opción 2: GitHub (para compartir)
-```bash
-# Push al repo
-git clone https://github.com/Dadne-cdm/shop
-cp SKILL.md shop/creator-template-shop/SKILL.md
-git add .
-git commit -m "Update creator-template-shop to v2.1 with 19 agents"
-git push
-```
-
----
-
-## 📦 ENTREGA FINAL
-
-Después de ejecutar todos los agentes, recibirás:
-
-```
-tema-completo-v1.0.0.zip
-├── Estructura completa del tema
-├── 51 archivos Liquid
-├── Popups system (12 archivos)
-├── Configuración multi-idioma
-├── Analytics & A/B testing setup
-├── SEO optimizado (schema markup)
-├── Performance optimizado (Lighthouse)
-├── Automations (Shopify Flow)
-├── Email/SMS templates
-├── Documentación 100+ páginas
-└── Ready para subir a Shopify ✅
-```
-
-**Tamaño:** ~2.5 MB
-**Tiempo construción:** 30-45 minutos (con 19 agentes)
-
----
-
-## 🌟 AGENTES DESTACADOS
-
-### Agente 2: PRODUCT PAGE 🏆
-Genera 16 secciones especializadas con:
-- Tendencias 2026 anti-objeciones
-- Nutritional information accordion
-- Allergen badges + Origin (USA Made, etc)
-- Stock indicators + Delivery timeline
-- FAQ anti-objeciones
-- Sticky mobile ATC (conversión +30%)
-- Bundle deals + cross-sell
-
-**Impacto:** +15-25% conversión
-
-### Agente 12: POPUP SYSTEM 🎯
-10 tipos de popups diferentes:
-- Welcome popup (2s delay)
-- Exit-intent (mouse tracking)
-- Time-triggered (30-90s)
-- Scroll-triggered (50% de página)
-- Product page (add to cart)
-- WhatsApp integration
-- Survey/Quiz interactive
-- Video testimonials
-- Lead magnet forms
-- Image + text variants
-
-**Impacto:** +10-30% email subscribers
-
-### Agente 19: AUTOMATION 🤖
-Pre-build Shopify Flow automations:
-- Abandoned cart recovery (-20% cart loss)
-- Review request workflows
-- VIP customer creation
-- Low stock alerts
-- Post-purchase cross-sell
-- Customer segmentation
-
----
-
-## 🔍 TECNOLOGÍAS
-
-- **Liquid** (Shopify template language)
-- **JSON** (Configuración)
-- **JavaScript** (Interactividad)
-- **CSS** (Styling responsive)
-- **Shopify CLI** (Deployment)
-- **Shopify AI Toolkit** (Validación)
-- **Google Analytics 4** (Analytics)
-- **Shopify GraphQL API** (Integraciones)
+- ✅ Genera **51 archivos Liquid** listos para Shopify
+- ✅ **19 agentes** construyen, validan y optimizan cada sección
+- ✅ Popups, SEO, analytics y automations **incluidos**
+- ✅ Tiempo de construcción: **30-45 minutos**
 
 ---
 
 ## 📋 REQUISITOS
 
-- Node.js 18+
-- Shopify development store
-- Shopify CLI (`npm install -g @shopify/cli`)
-- (Opcional) Shopify AI Toolkit para validación avanzada
+Antes de instalar necesitas:
+
+1. **Claude Desktop** — [Descargar aquí](https://claude.ai/download)
+2. **Mac o Windows** con Claude Desktop instalado
+3. El archivo **SKILL.md** de este repositorio
 
 ---
 
-## 🐛 SOPORTE & ACTUALIZACIONES
+## 📥 INSTALACIÓN
 
-- **Issues:** GitHub repo Dadne-cdm/shop
-- **Actualizaciones:** Auto-sync desde GitHub
-- **Versión actual:** 2.1 (Mayo 2026)
-- **Estado:** ✅ Production ready
+### Paso 1: Descarga el SKILL.md
 
----
+Descarga el archivo `SKILL.md` desde este repositorio (botón **Download raw file** arriba a la derecha).
 
-## 📖 DOCUMENTACIÓN COMPLETA
+### Paso 2: Crea la carpeta del skill
 
-Ver archivo **SKILL.md** para:
-- Especificaciones de cada agente
-- Ejemplos de código Liquid
-- Configuration schemas
-- Setup guides por funcionalidad
-- Best practices
+**En Mac:**
+```bash
+mkdir -p ~/Library/Application\ Support/Claude/skills/creator-template-shop
+```
 
----
+**En Windows:**
+```
+C:\Users\TU_USUARIO\AppData\Roaming\Claude\skills\creator-template-shop\
+```
 
-## 💡 TIPS
+### Paso 3: Copia el archivo
 
-1. **Comienza con Agente 1:** HOME PAGE SECTIONS
-2. **Customiza colores en Agente 6:** CONFIG & LOCALES
-3. **Agrega popups en Agente 12:** POPUP SYSTEM
-4. **Valida en Agente 9:** CODE VALIDATOR
-5. **Empaca en Agente 11:** THEME PACKAGER
+**En Mac:**
+```bash
+cp ~/Downloads/SKILL.md ~/Library/Application\ Support/Claude/skills/creator-template-shop/SKILL.md
+```
 
----
+**En Windows:**
+Copia `SKILL.md` a la carpeta que creaste en el paso anterior.
 
-## 📞 CONTACTO
+### Paso 4: Activa el skill en Claude Desktop
 
-**Autor:** Dadne CDM  
-**Email:** [Tu email]  
-**GitHub:** https://github.com/Dadne-cdm/shop  
-**Skill Marketplace:** Claude marketplace (próximamente)
+1. Abre Claude Desktop
+2. Ve a **Settings → Skills**
+3. Busca `creator-template-shop`
+4. Activa el toggle ✅
 
 ---
 
-**Versión:** 2.1  
-**Estado:** ✅ PRODUCCIÓN LISTA  
-**Agentes:** 19 especializados  
-**Última actualización:** Mayo 2026
+## 🚀 CÓMO USAR
+
+Una vez instalado, abre Claude Desktop y escribe algo como:
+
+```
+Construye un tema Shopify premium para mi tienda de suplementos deportivos.
+
+- Nicho: Proteínas y suplementos
+- Colores: Azul #0099FF + Negro #1A1A1A  
+- Idiomas: Español e Inglés
+- Incluye: Popups de bienvenida, exit-intent y recuperación de carrito
+```
+
+Claude activará automáticamente los 19 agentes y construirá tu tema paso a paso.
+
+---
+
+## 📊 LOS 19 AGENTES
+
+| Fase | Agentes | Qué construyen |
+|------|---------|----------------|
+| **Construcción** | 1–7 | Secciones Liquid (home, producto, colecciones, carrito) |
+| **Calidad** | 8–11 | Validación de código + empaquetado .zip |
+| **Conversión** | 12–17 | Popups, A/B testing, SEO, performance, CRO |
+| **Expansión** | 18–19 | Multi-channel + Shopify Flow automations |
+
+Ver [AGENTS-SUMMARY.md](./AGENTS-SUMMARY.md) para detalles de cada agente.
+
+---
+
+## 📦 QUÉ RECIBES AL FINAL
+
+```
+tema-shopify-v1.0.0.zip
+├── sections/          ← 51 archivos Liquid
+├── snippets/          ← 6 componentes reutilizables
+├── assets/            ← CSS, JS, fuentes
+├── config/            ← settings_schema.json
+├── layout/            ← theme.liquid
+├── templates/         ← 5 templates JSON
+├── locales/           ← ES, EN, FR
+├── popups/            ← 10 tipos de popups
+└── automations/       ← Shopify Flow JSONs
+```
+
+**Listo para subir directamente a Shopify** desde el panel de administración.
+
+---
+
+## 🌟 CARACTERÍSTICAS DESTACADAS
+
+### Product Page con tendencias 2026 🏆
+- Nutritional information accordion
+- Allergen badges (Contains/Free from)
+- Stock indicator + Delivery timeline
+- FAQ anti-objeciones
+- Sticky mobile ATC (+30% conversión)
+- Bundle deals + cross-sell
+- Before/After slider
+
+### Popup System completo 🎯
+10 tipos: Welcome, Exit-intent, Time-triggered, Scroll, WhatsApp, Video, Survey y más.
+
+### Shopify Flow Automations 🤖
+- Recuperación de carrito abandonado
+- Solicitud de reseñas post-compra
+- Programa VIP de clientes
+- Alertas de bajo stock
+- Cross-sell post-compra
+
+---
+
+## ❓ PREGUNTAS FRECUENTES
+
+**¿Funciona en claude.ai web?**
+No, este skill requiere **Claude Desktop** instalado en tu ordenador.
+
+**¿Es compatible con cualquier tienda Shopify?**
+Sí, genera código Liquid estándar compatible con cualquier plan de Shopify.
+
+**¿Puedo personalizar los colores y estilos?**
+Sí, en el Agente 6 (CONFIG & LOCALES) defines los colores, tipografías y configuración global.
+
+**¿Qué pasa si tengo un error?**
+Abre un [Issue en GitHub](https://github.com/Dadne-cdm/shop/issues) y lo resolvemos.
+
+---
+
+## 📌 VERSIÓN
+
+| Campo | Info |
+|-------|------|
+| Versión | 2.1 |
+| Agentes | 19 |
+| Archivos Liquid | 51 |
+| Última actualización | Mayo 2026 |
+| Estado | ✅ Production ready |
+
+---
+
+## 🤝 CONTRIBUIR
+
+¿Tienes ideas para mejorar el skill? 
+1. Haz un **Fork** del repositorio
+2. Crea una rama con tu mejora
+3. Abre un **Pull Request**
+
+---
+
+**GitHub:** [github.com/Dadne-cdm/shop](https://github.com/Dadne-cdm/shop)
 
