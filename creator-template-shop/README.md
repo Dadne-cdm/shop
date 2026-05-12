@@ -27,35 +27,66 @@ Antes de instalar necesitas:
 
 ## 📥 INSTALACIÓN
 
-### Paso 1: Descarga el SKILL.md
+### Paso 1: Descarga el ZIP
 
-Descarga el archivo `SKILL.md` desde este repositorio (botón **Download raw file** arriba a la derecha).
+Ve a la sección [Releases](https://github.com/Dadne-cdm/shop/releases) y descarga `creator-template-shop-v2.1.zip`.
 
-### Paso 2: Crea la carpeta del skill
+O descarga directamente:
+```
+https://github.com/Dadne-cdm/shop/releases/download/v2.1/creator-template-shop-v2.1.zip
+```
 
-**En Mac:**
+### Paso 2: Extrae el ZIP
+
+**En Mac:** Doble click en el ZIP para extraerlo.
+
+**En Windows:** Click derecho en el ZIP → **Extraer todo**
+
+---
+
+### 🍎 INSTALACIÓN EN MAC
+
+Abre **Terminal** y ejecuta estos comandos uno por uno:
+
 ```bash
+# 1. Crear la carpeta del skill
 mkdir -p ~/Library/Application\ Support/Claude/skills/creator-template-shop
+
+# 2. Copiar el SKILL.md
+cp ~/Downloads/creator-template-shop-v2.1/SKILL.md ~/Library/Application\ Support/Claude/skills/creator-template-shop/SKILL.md
+
+# 3. Verificar que está instalado
+ls ~/Library/Application\ Support/Claude/skills/creator-template-shop/
 ```
 
-**En Windows:**
+Si ves `SKILL.md` en el resultado ✅ está instalado correctamente.
+
+---
+
+### 🪟 INSTALACIÓN EN WINDOWS
+
+Abre **PowerShell** (busca "PowerShell" en el menú inicio) y ejecuta:
+
+```powershell
+# 1. Crear la carpeta del skill
+mkdir "$env:APPDATA\Claude\skills\creator-template-shop"
+
+# 2. Copiar el SKILL.md
+copy "$env:USERPROFILE\Downloads\creator-template-shop-v2.1\SKILL.md" "$env:APPDATA\Claude\skills\creator-template-shop\SKILL.md"
+
+# 3. Verificar que está instalado
+dir "$env:APPDATA\Claude\skills\creator-template-shop\"
 ```
-C:\Users\TU_USUARIO\AppData\Roaming\Claude\skills\creator-template-shop\
-```
 
-### Paso 3: Copia el archivo
+Si ves `SKILL.md` en el resultado ✅ está instalado correctamente.
 
-**En Mac:**
-```bash
-cp ~/Downloads/SKILL.md ~/Library/Application\ Support/Claude/skills/creator-template-shop/SKILL.md
-```
+> **¿No encuentras PowerShell?** Pulsa `Windows + R`, escribe `powershell` y pulsa Enter.
 
-**En Windows:**
-Copia `SKILL.md` a la carpeta que creaste en el paso anterior.
+---
 
-### Paso 4: Activa el skill en Claude Desktop
+### Paso 3: Activa el skill en Claude Desktop
 
-1. Abre Claude Desktop
+1. **Reinicia Claude Desktop** (ciérralo completamente y vuelve a abrirlo)
 2. Ve a **Settings → Skills**
 3. Busca `creator-template-shop`
 4. Activa el toggle ✅
@@ -145,6 +176,9 @@ Sí, genera código Liquid estándar compatible con cualquier plan de Shopify.
 **¿Puedo personalizar los colores y estilos?**
 Sí, en el Agente 6 (CONFIG & LOCALES) defines los colores, tipografías y configuración global.
 
+**¿No veo el skill en Claude Desktop después de instalarlo?**
+Reinicia Claude Desktop completamente (cierra y vuelve a abrir) y verifica en Settings → Skills.
+
 **¿Qué pasa si tengo un error?**
 Abre un [Issue en GitHub](https://github.com/Dadne-cdm/shop/issues) y lo resolvemos.
 
@@ -164,7 +198,7 @@ Abre un [Issue en GitHub](https://github.com/Dadne-cdm/shop/issues) y lo resolve
 
 ## 🤝 CONTRIBUIR
 
-¿Tienes ideas para mejorar el skill? 
+¿Tienes ideas para mejorar el skill?
 1. Haz un **Fork** del repositorio
 2. Crea una rama con tu mejora
 3. Abre un **Pull Request**
@@ -172,4 +206,3 @@ Abre un [Issue en GitHub](https://github.com/Dadne-cdm/shop/issues) y lo resolve
 ---
 
 **GitHub:** [github.com/Dadne-cdm/shop](https://github.com/Dadne-cdm/shop)
-
